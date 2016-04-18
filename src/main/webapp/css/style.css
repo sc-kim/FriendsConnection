@@ -1,0 +1,79 @@
+@charset "utf-8";
+* {font-family:NanumGothic,"나눔고딕","맑은고딕",MalgunGothic,sans-serif;color:#333;box-sizing: border-box;}
+header {background:#d1c0a5}
+li {float:left; list-style:none}
+img {max-width:100%;}
+.out1 {width:25%;text-align:center}
+.over1 {width:25%;text-align:center;font-weight:bold;color:#fff;background:#fc355c}
+.over2 {width:25%;text-align:center;font-weight:bold;color:#fff;background:#f8c828}
+.over3 {width:25%;text-align:center;font-weight:bold;color:#fff;background:#6dcea1}
+.over4 {width:25%;text-align:center;font-weight:bold;color:#fff;background:#398ffc}
+.over1 a {color:#fff !important}
+.over2 a {color:#fff !important}
+.over3 a {color:#fff !important}
+.over4 a {color:#fff !important}
+.pd_t20 {padding-top:20px}
+.header_pd {padding:20px}
+.con_left {float:left;width:20%}
+.con_right {float:right;width:80%}
+.con_right p {display: inline-block;color: #fff;margin-top: 30px;margin-left: 20%;font-size:16px;}
+.top_menu {float:right;width:auto}
+.top_menu a {color:#333}
+.page-wrap {min-height: 100%;}
+.page-wrap:after {content: "";display: block;}
+.friend-wrap {  min-height: 100%;  height:1250px; background:#291b18;}
+.friend-wrap:after {content: "";display: block;}
+.site-footer, .page-wrap:after {height: 130px;}
+.site-footer {background:#626262;}
+.grid {margin: 0 auto;}
+.grid:after {content: '';display: block;clear: both;}
+.grid-item {width: 280px;height: auto;float: left;background: white;border: 1px solid #333;border-color: #aaa;border-radius: 5px;margin-bottom:10px;margin-right:7px;}
+.grid-item:hover {background: #000;opacity: 0.5;cursor: pointer;}
+.flex-box {width:100%;font-family:NanumGothic,"나눔고딕","맑은고딕",MalgunGothic,sans-serif}
+.tit {width:100%;margin:0 auto;margin-top:5%;font-size:3em;font-weight:bold;text-align:center}
+.sub {width:100%;margin:0 auto;margin-top:50px;font-size:1.3em;text-align:center;}
+.icon-box {box-sizing:border-box;margin-top:-1000px;}
+.ico a {box-sizing:border-box;width:19%;float:left;margin-right:1%;background:#fff;border-radius:50%;opacity:0.7;}
+.ico a:hover {opacity:1;}
+.fdbg {height:790px;background:url('../img/bg1.jpg') center no-repeat;background-size: cover;z-index:1}
+.left {float:left;width:20%;box-sizing:border-box}
+.top-menu {width:100%;height:40px;line-height:40px;vertical-align:middle;border-radius:4px;background:#000;opacity:0.8;font-size:15px;color:#fff;text-align:center;color:#fff;}
+.top-menu ul {padding:0;margin:0}
+.top-menu li {box-sizing:border-box}
+.top-menu li a {color:#fff;}
+.top-menu li a:hover {font-weight:bold;}
+.w25 {width:25%;}
+.w20 {width:20%;}
+.txt-center {text-align:center;}
+.left-menu {width:100%;height:100%;border-radius:4px;background:#000;opacity:0.8}
+.left-menu ul {padding:0;margin:0;}
+.left-menu li {float:none;width:100%;padding:2px;box-sizing:border-box;border-bottom:1px dotted rgba(255,255,255,0.5);}
+.left-menu li:last-child {border-bottom:0}
+.left-menu a {box-sizing:border-box;padding-left:15px;line-height:26px;vertical-align:middle;font-size:14px;color:#fff}
+.left-menu a:hover {color:#ff1980;}
+.right {position:relative;float:right;width:77%;box-sizing:border-box}
+.right-top {float:left;height:100%;width:100%;}
+.friend-bottom {position:relative;float:left;height:100%;width:100%;margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;}
+.right-bottom-title {width:100%;border-bottom:1px solid #9b00c7;padding-top:25px;}
+.right-bottom-title span {padding:3px 37px;color:#000;background:#9b00c7;font-size:18px;font-weight:bold;}
+.rb-box {width:100%}
+.best {width:98%;max-width:594px;margin:0 auto;margin-bottom:10px;cursor:pointer;border-radius:4px;box-sizing:border-box;background:#f7f7f7;box-shadow: 2px 2px 2px rgba(128,128,128,0.5);
+    -moz-box-shadow: 2px 2px 2px rgba(128,128,128,0.5);  -webkit-box-shadow: 2px 2px 2px rgba(128,128,128,0.5);z-index:991;}
+.best_lst {width:98%;max-width:594px;margin:0 auto;margin-bottom:10px;border-radius:4px;box-sizing:border-box;background:#f7f7f7;box-shadow: 2px 2px 2px rgba(128,128,128,0.5);
+    -moz-box-shadow: 2px 2px 2px rgba(128,128,128,0.5);  -webkit-box-shadow: 2px 2px 2px rgba(128,128,128,0.5);z-index:991} 
+.best-bottom {padding:10px;color:#555;font-size:12px;height:70px;overflow:hidden}
+.small-menu {font-size:14px;}
+.modal-right {float:right;width:41%;border-left:1px solid #e5e5e5;padding:10px;margin-bottom:10px;/* height:370px; */overflow-y:hidden;font-size:14px;}
+.modal-con {width:100%;padding-left:10px;padding-right:10px}
+.modal-left {float:left;width:58%;}
+.modal-profile {width:22px;height:22px;margin-right:5px;border-radius:50%;}
+.m_head {padding-top:3%;padding-bottom:1%; font-size:32px;color:#333;text-align:left;font-weight:bold}
+.m-style {color:#fff;padding:15px;font-family:'나눔고딕',NanumGothic;font-weight:normal}
+.last-m-style {color:#fff;padding:15px 25px 15px 15px;font-family:'나눔고딕',NanumGothic;font-weight:normal}
+.line {width:230px;height:5px;background:#333;margin-left:20px;margin-bottom:3%}
+/* 인스타그램 게시물 사진 css */
+.insta-box {position: relative;float: left;margin: 4px;border: 1px solid #ddd;}   
+.image-layer {overflow: hidden;width: 100%;height: 100%;}  
+.image-layer img {max-width: 100%;}  
+.caption-layer {display: none;position: absolute;top: 0;background: rgba(255,255,255,0.8);height: 100%;width: 100%;padding: 10px;box-sizing: border-box;font-size: 10px;color: #333;}  
+.insta-likes {float: right;} 

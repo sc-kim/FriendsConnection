@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="socialCategory">
+ 
+	<select id="selectSocialAllList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+      		WHERE ROWNUM <= 20
+		]]>
+	</select>
+	
+	<select id="selectSocialG_CODEList_A" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'A' AND
+		 	ROWNUM <= 20
+		]]>
+	</select>
+	<select id="selectSocialG_CODEList_B" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'B' AND
+		 	ROWNUM <= 20 
+		]]>
+	</select>
+	<select id="selectSocialG_CODEList_C" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'C' AND
+		 	ROWNUM <= 20 
+		]]>
+	</select>
+	<select id="selectSocialG_CODEList_D" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'D' AND
+		 	ROWNUM <= 20 
+		]]>
+	</select>
+	
+	
+	<select id="selectSocialD_CODEList_A_10" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'A' AND D_CODE = 10 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>	 
+ 	<select id="selectSocialD_CODEList_A_20" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'A' AND D_CODE = 20 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_A_30" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'A' AND D_CODE = 30 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>	 
+ 	<select id="selectSocialD_CODEList_A_40" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC) 
+		 	WHERE G_CODE = 'A' AND D_CODE = 40 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	 <select id="selectSocialD_CODEList_A_50" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'A' AND D_CODE = 50 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_B_10" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'B' AND D_CODE = 10 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_B_20" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'B' AND D_CODE = 20 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_B_30" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'B' AND D_CODE = 30 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_C_10" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'C' AND D_CODE = 10 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+		<select id="selectSocialD_CODEList_C_20" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'C' AND D_CODE = 20 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_C_30" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'C' AND D_CODE = 30 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_C_40" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'C' AND D_CODE = 40 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_C_50" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'C' AND D_CODE = 50 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_D_10" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'D' AND D_CODE = 10 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+		<select id="selectSocialD_CODEList_D_20" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'D' AND D_CODE = 20 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_D_30" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'D' AND D_CODE = 30 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	<select id="selectSocialD_CODEList_D_40" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+		 	SELECT 
+		 	G_CODE, D_CODE, USER_ID, SCORE 
+		 	FROM (SELECT * FROM  INSTA_SOCIAL ORDER BY SCORE DESC)
+		 	WHERE G_CODE = 'D' AND D_CODE = 40 AND
+		 	ROWNUM <= 20  
+		]]>
+	</select>
+	
+</mapper>

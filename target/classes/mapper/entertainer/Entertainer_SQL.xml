@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="entertainerCategory">
+ 
+	<select id="selectEntertainerRankList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+			SELECT C_CODE, DOC_ID, USER_ID, LIKES_COUNT, CREATED_TIME 
+			FROM INSTA_CATEGORY_TEST
+			WHERE C_CODE = 10 AND 
+			ROWNUM <= 20
+		]]>
+	</select>
+	 
+</mapper>

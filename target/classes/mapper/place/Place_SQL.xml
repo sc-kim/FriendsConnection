@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="placeCategory">
+ 
+	<select id="selectPlaceRankList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+			SELECT C_CODE, DOC_ID, USER_ID, LIKES_COUNT, CREATED_TIME 
+			FROM INSTA_CATEGORY_TEST
+			WHERE C_CODE = 20 AND 
+			ROWNUM <= 20
+			ORDER BY LIKES_COUNT DESC
+		]]>
+	</select>
+	 
+	 <insert id="insertPlaceData" parameterType="first.place.dto.PlaceCategoryDTO">
+	 	<![CDATA[
+			INSERT INTO INSTA_CATEGORY
+			(
+				C_CODE, 
+				DOC_ID, 
+				USER_ID, 
+				LIKES_COUNT, 
+				CREATED_TIME
+			)
+			VALUES(
+				#{cCode},
+				#{docId},
+				#{userId},
+				#{likesCount},
+				#{createdTime}
+			)
+			]]>
+	 </insert>
+	 
+	 	<select id="selectLDLocation"  resultType="hashmap">
+		<![CDATA[
+			SELECT NAME, COUNT
+			FROM (SELECT * FROM INSTA_LDATE_LOCATION ORDER BY COUNT DESC)
+			WHERE 
+			ROWNUM <= 5
+		]]>
+	</select>
+	
+		 	<select id="selectLDMapreduce" parameterType="String" resultType="hashmap">
+		<![CDATA[
+			SELECT NAME, TAG, COUNT, DOC_ID
+			FROM (SELECT * FROM INSTA_LDMAPREDUCE WHERE NAME = #{name})
+			WHERE
+			ROWNUM <= 10
+			ORDER BY COUNT DESC
+		]]>
+	</select>
+	
+	 
+</mapper>

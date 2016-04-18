@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="foodCategory">
+ 
+	<select id="selectFoodRankList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+			SELECT *
+			FROM INSTA_CATEGORY_TEST
+			WHERE C_CODE = 30 AND 
+			ROWNUM <= 50 
+			ORDER BY LIKES_COUNT DESC
+		]]>
+	</select>
+
+	<update id="updateFoodRankList" parameterType="first.food.dto.FoodCategoryDTO">
+		<![CDATA[
+			UPDATE INSTA_CATEGORY
+			SET
+				LIKES_COUNT = #{likesCount}
+			WHERE DOC_ID = #{docId}
+		]]>
+	</update>
+	 
+</mapper>

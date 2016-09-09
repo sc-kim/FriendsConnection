@@ -36,7 +36,7 @@
     </footer>
     <!-- 하단 끝 -->
     
-    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
     <script>
 	    $('#myModal').on('show.bs.modal', function (e) {
 			console.log('modal show');
